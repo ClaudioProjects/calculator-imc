@@ -33,7 +33,7 @@ body {
 .container {
     font-size: 1.8rem;
     background: var(--background-color);
-    min-height: 90vh;
+    min-height: 85vh;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -147,11 +147,11 @@ button:hover {
 /* Colocar um footer e um heading */
 
 .footer-main {
-    height: 5vh;
+    height: 7.5vh;
     background: #fff;
     font-size: 2rem;
     text-align: center;
-    min-width: 100vw;
+    min-width: 100%;
 }
 .footer-main p {
     padding-top: 1rem;
@@ -161,11 +161,12 @@ button:hover {
 }
 
 header {
-    height: 5vh;
+    height: 7.5vh;
     text-align: center;
     background: #fff;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 0.5rem;
+    min-width: 100%;
 }
 
 /* Trabalhando com mediaquery */
@@ -199,5 +200,11 @@ header {
 
     .footer-main {
         font-size: 1.6rem;
+    }
+}
+
+@media (max-height: 899px) {
+    .container {
+        margin: 10rem 0;
     }
 }
