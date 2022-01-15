@@ -52,7 +52,7 @@ function verifyDados(imc) {
         validateDados = "Dados invalidos";
         return [validateDados, "false"]
     } else {
-        validateDados = (`Seu imc ${imc} ` + verifica(imc));
+        validateDados = (`Seu imc ${imc.replace(".", ",")} ` + verifica(imc));
         return [validateDados, "true"]
     }
 }
