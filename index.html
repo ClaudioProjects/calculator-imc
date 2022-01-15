@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <section class="container white-bg">
+        <div class="main-form center">
+            <h1>TAbela imc</h1>
+
+            <div class="table-main">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>imc</th>
+                            <th>resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Menos do que 18.5</td>
+                            <td>Abaixo do peso</td>
+                        </tr>
+                        <tr>
+                            <td>entre 18.5 e 24.9 </td>
+                            <td>Peso normal</td>
+                        </tr>
+                        <tr>
+                            <td>entre 25 e 29.9</td>
+                            <td>Sobrepeso</td>
+                        </tr>
+                        <tr>
+                            <td>entre 30 e 34.9</td>
+                            <td>Obesidade grau 1</td>
+                        </tr>
+                        <tr>
+                            <td>entre 35 e 39.9</td>
+                            <td>Obesidade grau 2</td>
+                        </tr>
+                        <tr>
+                            <td>Mais do que 40</td>
+                            <td>Obesidade grau 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Calcule seu imc</h2>
+            <form action="" class="form">
+                <div class="input-box">
+                    <label for="peso">Peso:</label>
+                    <input type="text" id="peso" autocomplete="off">
+                </div>
+                <div class="input-box">
+                    <label for="altura">Altura</label>
+                    <input type="text" id="altura" autocomplete="off">
+                </div>
+                <div class="input-button">
+                    <button id="submit">Calcular</button>
+                </div>
+            </form>
+            <div class="resultado"></div>
+            <script src="/assets/js/scripts.js"></script>
+        </div>
+    </section>
+</body>
+</html>
